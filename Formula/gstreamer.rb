@@ -243,6 +243,11 @@ class Gstreamer < Formula
 
       Do not install plugins into GStreamer's prefix. They will be deleted
       by `brew upgrade`.
+
+      Add below to your environment or .zprofile to be able to use frei0r plugins:
+        export FREI0R_PATH=$(brew --cellar frei0r)
+      Or to use specific version of frei0r, for example, 2.5.0 add: 
+        export FREI0R_PATH=$(brew --cellar frei0r)/2.5.0
     EOS
   end
 
